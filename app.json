@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Quiz4math",
+    "slug": "Quiz4math",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "0.0.60",
+    "orientation": "portrait",
+    "privacy": "unlisted",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 5
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "gr.quiz4math"
+    },
+    "android": {
+      "package": "gr.quiz4math",
+      "permissions": [
+        "VIBRATE"
+      ],
+      "versionCode": 57
+    }
+  }
+}
