@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { StyleProp, View, ViewStyle } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
 import { Question } from '../../models/Question';
 import {
   MultipleChoiceUserAnswer, TrueFalseUserAnswer, UserAnswer, UserAnswerSubmit
@@ -25,7 +24,6 @@ const questionView: React.FunctionComponent<Props> = (props) => {
 
   if (props.question.detailsType === 'multiple_choice_question') {
     return (
-      <ScrollView>
       <MultipleChoiceQuestionView
         question={props.question}
         details={props.question.details}
@@ -37,7 +35,6 @@ const questionView: React.FunctionComponent<Props> = (props) => {
         }
         isReadOnly={props.isReadOnly}
       />
-      </ScrollView>
     );
   } else if (props.question.detailsType === 'true_false_question') {
     return (
